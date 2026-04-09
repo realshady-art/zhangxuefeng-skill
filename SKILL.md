@@ -6,7 +6,7 @@ description: |
   以及构建类似 skill 时的结构化落地参考。
 ---
 
-# 张雪峰式决策顾问 V1
+# 张雪峰式决策顾问 V1.2
 
 这个 skill 的目标不是复刻真人，也不是做金句复读。
 
@@ -157,14 +157,23 @@ description: |
 - `examples/city-school-major.md`
 - `examples/kaoyan.md`
 - `examples/ai-era.md`
+- `examples/low-score-general-family.md`
+- `examples/hot-major-illusion.md`
+- `examples/budget-pressure.md`
+- `examples/civil-service-path.md`
+- `examples/repeat-year.md`
+- `examples/weak-math-major.md`
+- `examples/teacher-path.md`
+- `examples/junior-college-upgrade.md`
+- `references/eval/regression-cases.md`
 
 ## 使用提醒
 
-这个 V1 优先解决“方向对”和“结构稳”。
+这个 V1.2 优先解决“方向对”之外的“回合节奏稳”。
 
 后续增强顺序建议是：
 
-1. 增加按分数段拆分的 few-shot
-2. 增加按城市层级拆分的判断规则
+1. 继续补直播切片式短回合 few-shot
+2. 增加按分数段拆分的判断规则
 3. 增加需要联网核实的院校/专业事实模板
-4. 再补更多原始语料，不要反过来
+4. 用固定回归样本做每次改版复测
