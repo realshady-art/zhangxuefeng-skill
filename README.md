@@ -14,6 +14,7 @@
   <img alt="mode" src="https://img.shields.io/badge/mode-codex%20skill-black">
   <img alt="style" src="https://img.shields.io/badge/style-%E7%9F%AD%E5%8F%A5%20%2B%20%E7%BB%93%E8%AE%BA%E5%85%88%E8%A1%8C-orange">
   <img alt="focus" src="https://img.shields.io/badge/focus-%E5%8D%87%E5%AD%A6%20%2F%20%E4%B8%93%E4%B8%9A%20%2F%20%E8%80%83%E7%A0%94-blue">
+  <img alt="core" src="https://img.shields.io/badge/core-%E5%BF%97%E6%84%BF%E9%A3%8E%E6%8E%A7-%23a12f13">
 </p>
 
 > 谁懂啊。很多 AI 一聊志愿就开始做心理咨询。  
@@ -27,7 +28,7 @@
 
 它做的事更具体：
 
-- 用张雪峰式的现实主义框架分析升学、专业、城市、考研和职业路径
+- 用张雪峰式现实主义框架分析升学、专业、城市、考研和职业路径
 - 优先站在普通家庭、低容错、要落地的视角里判断
 - 先下结论，再给理由，再给备选，不跟你兜圈子
 
@@ -95,12 +96,14 @@
 - 对热门专业上头，但心里也知道可能不稳
 - 在“喜欢”和“好就业”之间来回横跳
 - 想问考研值不值，但不想听空话
+- 想把“网红风格”拆成“可执行决策系统”的人
 
 不适合这些人：
 
 - 想玩纯人格模仿
 - 想听纯情绪发泄
 - 只想收集金句，不想看判断逻辑
+- 想把极端直播切片直接当最终决策规则
 
 ## 安装
 
@@ -130,16 +133,20 @@ git clone https://github.com/realshady-art/zhangxuefeng-skill.git
 
 ```text
 .
-├── assets/
-│   └── zhangxuefeng-cover-v1.png
 ├── README.md
 ├── SKILL.md
+├── assets/
+│   ├── zhangxuefeng-cover-v1.png
+│   └── cover.svg
 ├── examples/
 │   ├── ai-era.md
 │   ├── city-school-major.md
+│   ├── civil-service-path.md
+│   ├── hot-major-illusion.md
 │   ├── kaoyan.md
 │   ├── major-choice.md
-│   └── media-major.md
+│   ├── media-major.md
+│   └── ...
 └── references/
     ├── eval/
     │   └── regression-cases.md
@@ -152,26 +159,15 @@ git clone https://github.com/realshady-art/zhangxuefeng-skill.git
 
 ## 文件怎么分工
 
-- `SKILL.md`
-  最终执行协议。决定什么时候触发、怎么追问、怎么输出。
-
-- `references/research/decision-rules.md`
-  决定“怎么判断”，不是“怎么喊口号”。
-
-- `references/research/style-rules.md`
-  决定语气怎么硬、哪里能学、哪里不能过火。
-
-- `references/research/boundary-rules.md`
-  防止它从“现实”滑成“粗暴”。
-
-- `references/research/source-tiers.md`
-  防止把二创片段当一手证据。
-
-- `examples/`
-  用 few-shot 校正回合节奏和典型场景，不靠语录拼贴。
-
-- `references/eval/regression-cases.md`
-  每次改完后拿来复测，避免越改越像“只会怼人的咨询问卷”。
+| 文件 | 作用 |
+| --- | --- |
+| `SKILL.md` | 最终执行协议，决定什么时候触发、怎么追问、怎么输出 |
+| `references/research/decision-rules.md` | 决定“怎么判断”，不是“怎么喊口号” |
+| `references/research/style-rules.md` | 决定语气怎么硬、哪里能学、哪里不能过火 |
+| `references/research/boundary-rules.md` | 防止它从“现实”滑成“粗暴” |
+| `references/research/source-tiers.md` | 防止把二创片段当一手证据 |
+| `examples/` | 用 few-shot 校正回合节奏和典型场景，不靠语录拼贴 |
+| `references/eval/regression-cases.md` | 每次改完后复测，避免越改越像“只会怼人的咨询问卷” |
 
 ## 设计原则
 
@@ -219,12 +215,35 @@ git clone https://github.com/realshady-art/zhangxuefeng-skill.git
 - 会默认站在普通家庭、低容错立场里判断
 - 某些方向命中时，会直接切强判断，而不是磨磨唧唧
 
+## 这个项目和“做一个嘴替 bot”的区别
+
+区别很大。
+
+嘴替 bot 的逻辑通常是：
+
+- 学口头禅
+- 学情绪
+- 学语气
+
+这个项目的逻辑是：
+
+- 学判断顺序
+- 学风险偏好
+- 学普通家庭决策基线
+- 再把口气叠上去
+
+所以它更像一个：
+
+> 升学决策风控引擎  
+> 而不是情绪化直播切片生成器
+
 ## 下一步还会补什么
 
 - 更多直播切片式短回合 few-shot
 - 按分数段拆的判断样本
 - 传媒 / 新闻传播之外的强风格子域
 - 需要联网核实的学校 / 专业事实模板
+- 更多子领域专项回测
 
 ## 最后一句
 

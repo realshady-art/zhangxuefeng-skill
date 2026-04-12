@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440" role="img" aria-labelledby="title desc">
+  <title id="title">张雪峰 skill 封面</title>
+  <desc id="desc">纯色背景的小红书风封面图，文案为“普通家庭 别瞎报”。</desc>
+  <rect width="1080" height="1440" fill="#d74b2a"/>
+  <text x="540" y="540" text-anchor="middle" fill="#fff5e9"
+        font-family="'PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif"
+        font-size="84" font-weight="700" letter-spacing="2">
+    普通家庭
+  </text>
+  <text x="540" y="680" text-anchor="middle" fill="#fff5e9"
+        font-family="'PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif"
+        font-size="160" font-weight="800" letter-spacing="6">
+    别瞎报
+  </text>
+  <text x="540" y="820" text-anchor="middle" fill="#ffd9bf"
+        font-family="'PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif"
+        font-size="42" font-weight="500" letter-spacing="3">
+    先看分数 · 再看资源 · 最后谈理想
+  </text>
+</svg>
